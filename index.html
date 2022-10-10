@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3acf3cc1b7.js" crossorigin="anonymous"></script>
     <title>Personal Portfolio Website</title>
-    <link rel = "stylesheet" href="./css/style.css";
-</head>
+    <link rel="stylesheet" href="./css/style.css";  </head>
+
 <body>
     <div id="header">
         <div class="container">
@@ -19,15 +21,18 @@
                     <li><a href="">Service</a></li>
                     <li><a href="">Portfolio</a></li>
                     <li><a href="">Contact</a></li>
+                    <i class="fa fa-times"></i>
                 </ul>
+                <i class="fas fa-bars"></i>
+                
             </nav>
             <div class="header-text">
                 <p>Fontend Web Developer</p>
-                <h1>Hi, I am <span>H@niful</span>  <br>    Jen from Bangladesh</h1>
+                <h1>Hi, I am <span>H@niful</span> <br> Jen from Bangladesh</h1>
             </div>
         </div>
     </div>
-    
+
     <!-- ===Start About Section=== -->
     <div id="about">
         <div class="container">
@@ -37,13 +42,17 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto, ratione, quaerat hic nulla quasi doloremque voluptates facilis quam debitis est nobis perferendis dicta laborum minus consequuntur aliquid et ex repudiandae blanditiis illum suscipit? Ea vero quia sapiente laudantium sed, a rem quas quibusdam exercitationem, deleniti nesciunt et sit expedita voluptate.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto, ratione, quaerat hic nulla quasi
+                        doloremque voluptates facilis quam debitis est nobis perferendis dicta laborum minus
+                        consequuntur aliquid et ex repudiandae blanditiis illum suscipit? Ea vero quia sapiente
+                        laudantium sed, a rem quas quibusdam exercitationem, deleniti nesciunt et sit expedita
+                        voluptate.</p>
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                         <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick = "opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
                     </div>
-                    <div class="tab-contents active-tab" id="skills" >
+                    <div class="tab-contents active-tab" id="skills">
                         <ul>
                             <li> <span>UI/UX</span><br>Desiging web/App interface</li>
                             <li> <span>Web Development</span><br>Web App Development</li>
@@ -57,7 +66,7 @@
                             <li> <span>2019</span><br>UI/UX Design Executive</li>
                         </ul>
                     </div>
-                    <div class="tab-contents" id = "education">
+                    <div class="tab-contents" id="education">
                         <ul>
                             <li> <span>2022</span><br>DIPLOMA IN ENGINEERING</li>
                             <li> <span>2018</span><br>Secondary School Certificate - SSC</li>
@@ -70,4 +79,5 @@
     </div>
     <script src="./js/script.js"></script>
 </body>
+
 </html>
