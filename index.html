@@ -6,8 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/3acf3cc1b7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
     <title>Personal Portfolio Website</title>
-    <link rel="stylesheet" href="./css/style.css";  </head>
+ </head>
 
 <body>
     <div id="header">
@@ -15,15 +16,23 @@
             <nav>
                 <!-- <img src="./images/logo.png" alt="logo" class="logo"> -->
                 <h1><span class="logo">H</span>@nifuL.</h1>
-                <ul>
+                <ul id="sidemenu">
                     <li><a href="">Home</a></li>
                     <li><a href="">About</a></li>
-                    <li><a href="">Service</a></li>
+                    <li><a href="">Service</a>
+                        <!-- <ul>
+                            <li><a href="#">M_Dropdown</a></li>
+                            <li><a href="#">M_Dropdown</a></li>
+                            <li><a href="#">M_Dropdown</a></li>
+                            <li><a href="#">M_Dropdown</a></li>
+                        </ul>  -->
+
+                    </li>
                     <li><a href="">Portfolio</a></li>
                     <li><a href="">Contact</a></li>
-                    <i class="fa fa-times"></i>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
                 </ul>
-                <i class="fas fa-bars"></i>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
                 
             </nav>
             <div class="header-text">
@@ -32,7 +41,7 @@
             </div>
         </div>
     </div>
-
+    
     <!-- ===Start About Section=== -->
     <div id="about">
         <div class="container">

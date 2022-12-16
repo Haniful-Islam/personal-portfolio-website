@@ -20,6 +20,9 @@ body{
     background-size: cover;
     
 }
+nav .fas{
+    display: none;
+}
 
 .container{
     padding: 10px 10%;
@@ -51,6 +54,9 @@ nav ul li a{
     font-size:18px;
     position:relative;
 }
+
+/* dropdown menu */
+
 nav ul li a::after{
     content:'';
     width:0;
@@ -160,5 +166,48 @@ nav ul li a:hover::after{
     .header-text h1{
         font-size:30px;
         
+    }
+    nav .fas{
+        display:block;
+        font-size: 25px;
+    }
+    nav ul {
+        background-color: #ff004f;
+        position: fixed;
+        top:0;
+        right:-2000px;
+        width: 200px;
+        height: 100vh;
+        padding-top:50px;
+        z-index: 2;
+        transition: all .5s ease;
+
+    }
+    nav ul li {
+        display: block;
+        margin:25px;
+    }
+    nav ul .fas{
+        position:absolute;
+        top:25px;
+        left:25px;
+        cursor: pointer;
+    }
+}
+
+/* =========for tablet device============= */
+@media screen and (min-width:689px) and (max-width:876px) {
+    nav{
+        width:100%;
+    }
+   
+    nav ul li{
+       margin-right:10px;
+    }
+    .header-text{
+        font-size:25px;
+    } 
+    .header-text h1{
+        font-size:40px; 
     }
 }
